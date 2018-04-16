@@ -5,7 +5,7 @@
 	<body>
 		Hello World!
 		<cfoutput >
-			Current Date: #dateforman(now(), "long")#
+			Current Date: #dateformat(now(), "long")#
 		</cfoutput>
 	</body>
 </html>
