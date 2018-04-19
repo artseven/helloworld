@@ -1,13 +1,13 @@
 <html>
 	<body>
 		<cfset sampleVar = 'Test'>
-		<cfset samplevar1 = 'Test'>
+		<cfset samplevar1 = 'Test1'>
 		
 		<cfif sampleVar EQ 'Test'>
 			sampleVar is Equal to Test<br>
 		</cfif>
 		
-		<cfif sampleVar NEQ 'Test1'>
+		<cfif sampleVar1 NEQ 'Test1'>
 			sampleVar is NOT Equal to Test1<br>
 		</cfif>
 		
