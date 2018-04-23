@@ -30,3 +30,25 @@ SELECT *
 FROM Person.Address
 WHERE City = 'Berlin'
 GO
+
+--WHERE Clause Multi Column
+SELECT *
+FROM Person.Address
+WHERE PostalCode = '91776' OR PostalCode = '94014'
+
+--WHERE Clause Multi Column
+SELECT *
+FROM Person.Address
+WHERE City = 'Berlin' AND PostalCode = '14111'
+
+--WHERE Clause Multi Column
+SELECT *
+From Person.Address
+WHERE PostalCode > '14111' AND PostalCode < '98296'
+
+--Group By
+SELECT City, PostalCode
+FROM Person.Address
+GROUP BY City, PostalCode
+GO
+
