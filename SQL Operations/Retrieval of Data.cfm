@@ -50,5 +50,21 @@ WHERE PostalCode > '14111' AND PostalCode < '98296'
 SELECT City, PostalCode
 FROM Person.Address
 GROUP BY City, PostalCode
+ORDER BY City, PostalCode
 GO
 
+-- Group By ORDER BY
+SELECT City, PostalCode, COUNT(*) Counter
+FROM Person.Address
+GROUP BY City, PostalCode
+ORDER BY City, PostalCode
+
+
+--Group By Order By Having Where
+SELECT City, PostalCode, COUNT(*) Counter
+FROM Person.Address
+WHERE City Like 'A%'
+GROUP BY City, PostalCode
+HAVING COUNT(*) > 1
+ORDER BY City, PostalCode
+GO 

@@ -12,6 +12,6 @@
 			Check the existence of the Structure Key: <br>
 			Size Exist? : #StructKeyExists(items, "size")#<br>
 			Size1 Exist?: #StructKeyExists(items, "size1")#
-		</cfoutput>
+		</cfoutput> 
 	</body>
 </html>
