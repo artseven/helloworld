@@ -2,7 +2,7 @@
 	SELECT *
 	FROM Person.Address
 </cfquery>
-
+Total number of records: <cfoutput>#FirstQuery.RecordCount#</cfoutput>
 <br>
 <html>
 	<body>
