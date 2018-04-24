@@ -3,7 +3,7 @@ CREATE DATABASE TestDB
 GO
 
 -- Use Database
-USE TestDB
+USE AdventureWorks2012
 GO
 
 --Create Table
