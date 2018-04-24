@@ -6,15 +6,14 @@
 <br>
 <html>
 	<body>
-		Let us Display the Results<br>
-		----------------------------------------------<br>
+		<table border="2">
 		<cfoutput query="FirstQuery">
-			AddressID: #FirstQuery.AddressID[1]#<br>
-			AddressLine1: #FirstQUery.AddressLine1[1]#<br>
-			City: #FirstQuery.City[1]#<br>
-			PostalCode: #FirstQuery.PostalCode[1]#<br>
+			<tr><td>AddressID: #FirstQuery.AddressID#</td></tr>
+			<tr><td>AddressLine1: #FirstQUery.AddressLine1#</td></tr>
+			<tr><td>City: #FirstQuery.City#</td></tr>
+			<tr><td>PostalCode: #FirstQuery.PostalCode#</td></tr>
 		</cfoutput>
+		</table>
 		<br>
-
 	</body>
 </html>
